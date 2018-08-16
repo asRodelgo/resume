@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% knitr resume new black and white version
+%
+% alberto.sanchez.rodelgo@gmail.com - October 2014
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%% PACKAGES DECLARATION %%%%%%%%%%%%
+\usepackage[top=0.4in, bottom=0.3in, left=0.6in, right=0.5in]{geometry}
+\usepackage{graphicx} % to load images
+\usepackage{wrapfig} % to wrap text around images
+\usepackage{multicol} % multiple columns layout
+\usepackage{xcolor} % color the background
+\usepackage{cutwin}
+\usepackage{booktabs} % proffesional touch to tables
+\usepackage[export]{adjustbox} % add alignment to includegraphics
+\opencutright
+\usepackage[pages=some,placement=top]{background} % fill the background with color or other
+%\usepackage{parskip} % use indentation for second and subsequent paragraphs
+\usepackage{lipsum}
+\usepackage[font=small]{caption}
+\usepackage{vwcol} % columns of different widths
+\usepackage{helvet} % arial text
+\usepackage{xcolor} % color text
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tabularx} % to adjust table width, etc.
+\usepackage{titlesec} % format titles and headers
+\usepackage{sectsty} % format sections & subsections
+%\usepackage{scrextend} % add indentation
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref} % to include hyperlinks in the doc
+\sectionfont{\fontsize{22}{20}\selectfont\raggedright} % formats title newsletter (section)
+\subsectionfont{\fontsize{18}{16}\selectfont\raggedright} % formats title newsletter (section)
+\subsubsectionfont{\fontsize{14}{13}\selectfont\raggedright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%% FIRST PAGE %%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\vspace{-1ex}
+\subsection*{\hspace{-0.7ex} Alberto Sanchez Rodelgo}
+\vspace{-2ex}
+\noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
+\begin{minipage}[c]{0.22\textwidth}
+\vspace{+2ex}
+\raggedleft\small \color{white!40!black}    Data Scientist \\  PMSO KM team\\ Macroeconomics, Trade and Investment, World Bank Group\\
+\vspace{+2ex}
+\includegraphics[width=0.95\textwidth]{/Users/asanchez3/Desktop/Testing/PresentationOfInformation/photoGSIMzoom.jpg}
+{\small
+\begin{tabular}{r p{3cm}}
+\multicolumn{2}{c}{} \\
+\\ \textbf{D.O.B.} & \\ May 4, 1978\\
+\textbf{Nationality} & \\ Spain\\
+\textbf{Status} & \\ Married \\ 2 children\\
+\textbf{Contact} & \\ \scriptsize{asanchezrodelgo@worldbank.org}\\
+\scriptsize {alberto.sanchez.rodelgo@gmail.com} \\
+\textbf{Work} & \\ World Bank Group\\
+\textbf{Location} & \\ Washington D.C.\\
+\end{tabular}
+}
+\vspace{+8ex}
+\end{minipage}
+\hfill
+\vline
+\hfill
+\begin{minipage}[c]{0.75\textwidth}
+% \vspace{+2ex}
+% \subsubsection*{\color{blue!60!black}Experience}
+{\small
+\begin{tabular}{r p{9cm}}
+\multicolumn{2}{c}{} \\
+%\midrule
+\textbf{Statistician} & I have always been fascinated by numbers, classifications, data. I ended up studying Maths and specialized in Statistics. Early in my career I worked for the National Statistics Institute of Spain (INE) then in 2012 for the Statistics Department at the IMF. Since November 2015 as a Data Scientist at the World Bank. I accumulate 15 years of experience working in Statistics.\\[3pt]
+\textbf{Innovative in data visualization} & I constantly search for innovative ways of presenting data. I have broad experience in Web content design, presentations, \href{https://tcdata360.worldbank.org/reports}{data reports}, infographics, D3 charts and newsletters.\\[3pt]
+\textbf{Data Scientist} & In my first job for a financial startup, I modeled intraday stocks market trading. At INE, I used SAS to optimize resource allocation for Data Collection Surveys. I was the analytics expert and R guru in the IMF's Statistics Department. In the Bank I build models, collaborate and present data driven by business questions. I deployed the first ever shiny-server and Connect to help the R research community in the Bank. For example: \href{https://blogs.worldbank.org/opendata/things-do-trade-and-competitiveness-data-thank-you-api}{TCdatascoper} \\[3pt]
+& I keep abreast of the developments in Data Science and Machine Learning and I participate in machine learning competitions and sports analytics conferences (MIT Sloan). I have a vast experience with statistical standards (SDMX, GSBPM, GSIM), and contributed papers on the Generic Statistical Business Model (GSIM) \\[3pt]
+\textbf{Skilled programmer} & I am an expert in R but also have programmed in Java: \href{http://www.ine.es/geotempus/?L=1}{Geo Statistics}, C++, Python, Visual basic, SAS and SQL. I have broad experience with Microsoft Business Analysis tools.\\[3pt]
+\textbf{Database and Web designer} & Extensive experience with relational databases. My major accomplishment was leading the creation of INE's new Dissemination Database, along with its API and powerful Web Applications. Examples of my work: \href{http://www.ine.es/FichasWeb/Welcome.do?L=1}{Geo Statistics}, \href{http://www.ine.es/ss/Satellite?L=es_ES&c=INEmasNoticia_C&cid=1259943920296&idp=1254736092090&pagename=masINE\%2FmasLayout}{Web Magazine}. In the Bank, my main project has been \href{https://tcdata360.worldbank.org/}{TCdata360} \\[3pt]
+\textbf{Project Manager} & I managed a team of 12 staff at INE for 3 years and I am currently the data lead in my unit in the Bank. As a project manager I combine expertise, drive for results, and I keep my team highly motivated and well trained. My teams thrive under stretch assignments and tight budgets. As an example: \href{http://www.ine.es/en}{INE's Website}.\\
+\end{tabular}
+}
+\end{minipage}
+%%%%%%%%%%%%%%%%%% EDUCATION, QUALIFICATIONS
+\vspace{-1ex}
+\subsubsection*{\hspace{-0.35ex}\color{black}Education, qualifications}
+\vspace{-2ex}
+\noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
+\vspace{-1ex}
+\begin{minipage}[c]{0.22\textwidth}
+\hspace{+1px}
+\end{minipage}
+\begin{minipage}[c]{0.75\textwidth}
+\vspace{+2ex}
+{\small
+\begin{tabular}{l p{9cm}}
+Member of the High Body of Statisticians of Spain \\[2pt]
+Lectured 3 years for the European Statistical Training Program \\[2pt]
+Trained in Hadoop (Pig, Hive, Impala), R, Java, XML, Web services, SAS, C++, LaTeX, SDMX\\[2pt]
+Co-wrote 2 papers for the IMF on the Generic Statistical Information Model (GSIM) \\ and a paper for the MIT sports analytics conference \\[8pt]
+\textbf{Education}\\[4pt]
+University of Manchester (UMIST) (2001-2002) - Applied Maths (Masters level)\\[2pt]
+\hspace{4ex} Dynamical Systems, Neural Networks, Data Engineering, Financial Statistics\\[2pt]
+Complutense University (1999-2001) - Statistics (Masters level)\\[2pt]
+Complutense University (1996-1999) - Mathematics (Bachelors degree)\\[2pt]
+\end{tabular}
+}
+\end{minipage}
+%%%%%%%%%%%%%%%%%% INFLUENCES, INTERESTS
+\subsubsection*{\hspace{-0.35ex}\color{black}Influences, interests}
+\vspace{-2ex}
+\noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
+\vspace{-1ex}
+\begin{minipage}[c]{0.22\textwidth}
+\hspace{+1px}
+\end{minipage}
+\begin{minipage}[c]{0.75\textwidth}
+\vspace{+2ex}
+{\small
+\begin{tabular}{l p{9cm}}
+\href{http://www.r-bloggers.com}{R community and bloggers}\\[2pt]
+Machine Learning: Profs. \href{https://work.caltech.edu/telecourse.html}{Yaser Abu-Mostafa}, \href{https://www.coursera.org/instructor/~154}{Geoffrey Hinton}, \href{http://andrewgelman.com}{Andrew Gelman}\\[2pt]
+\href{http://www.kaggle.com}{Kaggle.com}: data science competitions\\[2pt]
+\href{http://www.edwardtufte.com/tufte/index}{Edward Tufte}'s books on presentation of information \\[2pt]
+Nate Silver's \href{http://fivethirtyeight.com}{FiveThirtyEight} \\[2pt]
+%\href{http://www.unglobalpulse.org}{UN Global Pulse}'s work on Big Data\\[2pt]
+World Bank's \href{http://blogs.worldbank.org/opendata/}{Open Data} and \href{http://data.worldbank.org/developers?display=}{API}\\[2pt]
+%Xavier Badosa's Idescat API and jsonStat\\[2pt]
+%Google's \href{https://www.google.com/publicdata/directory}{Public Data Explorer}, \href{https://developers.google.com/maps/}{Maps}, \href{https://www.google.com/trends/}{Trends}, \href{https://developers.google.com/chart/}{Charts}, etc.\\[2pt]
+Sports data and analytics, like \href{https://www.basketball-reference.com/}{Basketball Reference} or \href{http://www.sloansportsconference.com/}{MIT Sports Analytics}\\[2pt]
+Armin Grossenbacher's \href{https://blogstats.wordpress.com/about/}{Blog About Stats}\\[2pt]
+%Johns Hopkins University's Data Science programs\\[8pt]
+
+\end{tabular}
+}
+\end{minipage}
+\end{figure}
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%% Second Page %%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\begin{figure}
+\subsubsection*{\hspace{-0.35ex}\color{black}Career \hspace{+46ex}{\footnotesize alberto.sanchez.rodelgo@gmail.com}}
+\vspace{-2ex}
+\noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
+{\footnotesize
+\begin{tabular}{l p{0.10cm} p{5.25cm} p{9cm}}
+\multicolumn{4}{c}{} \\
+When & & Position / Where & Achievements\\
+\end{tabular}
+}
+{\small
+\begin{tabular}{l p{5.3cm} p{11.1cm}}
+\multicolumn{3}{c}{}\\
+\hline \\
+15 -– now & \textbf{Data Scientist} \newline \footnotesize{Knowledge Management Team \newline Reporting to Practice Manager \newline\newline
+\includegraphics[width=4cm,height=0.8cm,left]{wb_logo.jpg}
+\color{cyan}\textbf{\scriptsize World Bank Group (WBG)} \newline \scriptsize Macroeconomics, Trade and Investment Practice}
+& I manage the \href{https://tcdata360.worldbank.org/}{Trade and Competitiveness Open Data Site (TCdata360)}, place to go for Trade and Investment economists, researchers, government officials, and journalists featuring curated datasets, visuals, stories, reports and data science.
+\newline \newline
+I develop shiny and dashboards to support data analysis, fully fleshed sites or just prototypes, which allows users to interact and download country data and operations reports along with country comparisons and data analysis.
+\newline \newline
+Currently I manage several survey data analysis and data reporting platforms in R. I frequently lead and collaborate in many data science projects, some related to NLP. I also collaborate in country operations: recently helped the Ministry of Finance of Guatemala develop a data portal in Shiny \\[6pt]
+\hline \\
+12 -– 15 & \textbf{Information Management Officer} \newline \footnotesize{Data Warehouse Team \newline Reporting to Section Chief \newline
+\includegraphics[width=1.3cm,height=1.3cm,left]{IMFlogo.png}
+\color{white!20!blue}\textbf{\scriptsize International Monetary Fund (IMF)} \newline \scriptsize Statistics Department}
+& I managed the Data Warehouse, lead communication and data visualization projects and collaborated in research papers. Evangelist of Data Science and member of the IMF's Big Data competition committee. Organized the Big Data talk by UN Global Pulse director as part of the IMF's 2nd Statistical Forum.
+\newline \newline
+I used R for Web scraping, database information retrieval, etc. I also used R and LaTeX to create dissemination products, reports and newsletters.
+\newline \newline
+Expert in Official Statistics Standards, particularly in the Statistical Data and Metadata Exchange standard (SDMX). I wrote papers on the UNECE's Generic Statistical Business Model (GSIM). I collaborated in the new IMF's data dissemination standard --- SDDS Plus, including two missions.\\[6pt]
+\hline \\
+09 -– 12 & \textbf{Section Chief} \newline \footnotesize{Data Dissemination Technologies \newline
+Reporting to Director \newline
+12 staff \newline \newline
+\includegraphics[width=2cm,height=0.8cm,left]{ineLogo.jpg}\newline
+\raggedright \color{red!40!black}\textbf{\scriptsize National Statistics Institute of Spain (INE)} \scriptsize Dissemination Department}
+& I was in charge of INE's dissemination database and Web Apps. Responsible for disseminating INE's indicators following a strict schedule. I managed a diverse team of 12 staff including the team budget and drafting RFPs for vendors. Our main achievement the creation, design and implementation of the new Dissemination Database, API and Web Apps. Some of which I coded.
+\newline \newline
+I liaised with data owners at INE and with exteranl vendors. I built strong relationships with Ministries and Autonomous Communities' Statistical Offices. I partnered with Universities to build INE's external API. I pushed for Open Data and the implementation of statistical standards, such as SDMX.
+\newline \newline
+I lectured 3 years for the European Statistical Training Program (ESTP), within the Spanish Statistical System and for Latin American countries. I presented my work in different forums in Spain and Europe.
+\\[6pt]
+\hline
+\\
+08 -– 09 & \textbf{Program Manager} \newline
+\footnotesize{Reporting to Statistical Cooperation Chief\newline
+\newline
+\includegraphics[width=2cm,height=0.8cm,left]{ineLogo.jpg}\newline
+\color{red!40!black}\textbf{\scriptsize National Statistics Institute of Spain (INE)} \scriptsize International Relations Department}
+\newline
+& At the International Relations Department I learned the intricacies of the European Statistical System and European regulation.
+\newline \newline
+I implemented statistical cooperation projects and organized conferences with African and Asian countries. I collaborated in drafting speeches for INE's chairman.
+\\[6pt]
+\hline
+\\
+04 -– 08 & \textbf{Junior Statistician} \newline
+\footnotesize{Reporting to Deputy Director
+\newline \newline
+\includegraphics[width=2cm,height=0.8cm,left]{ineLogo.jpg}\newline
+\color{red!40!black}\textbf{\scriptsize National Statistics Institute of Spain (INE)} \scriptsize Data Collection Department}
+& I spent one year preparing the exams for the Body of Statisticians of Spain. Finished 5th in the country which granted me a job at INE's HQ.
+\newline \newline
+I programmed algorithms to optimize resources and staff allocation for Data Collection Surveys using SAS and C++. I participated in the design and managed the first online data collection platform in Spain (ARCE) which featured a centralized database for the whole country.
+\\[6pt]
+\hline
+\\
+02 -– 04 & \textbf{Researcher} \newline
+\includegraphics[width=2cm,height=0.8cm,left]{etsLogo.jpg}
+%\color{blue!40!black}\footnotesize{\textbf{Expert Timing Systems}}
+& I built prediction models for stocks markets series with high frequency (intra-day) trades. I learned proprietary software, Excel and Matlab.
+\\[6pt]
+\hline
+\\
+\end{tabular}
+}
+\vspace{+12ex}
+\end{figure}
+\end{document}
