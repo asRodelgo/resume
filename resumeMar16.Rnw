@@ -40,7 +40,7 @@
 %%%%%%%%%%%%%%%% FIRST PAGE %%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \vspace{-1ex}
-\subsection*{\hspace{-0.7ex} Alberto Sanchez Rodelgo}
+\subsection*{\hspace{-0.7ex} Alberto Sanchez Rodelgo \hspace{18ex}\normalsize\href{https://github.com/asRodelgo}{https://github.com/asRodelgo}}
 \vspace{-2ex}
 \noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
 \begin{minipage}[c]{0.22\textwidth}
@@ -59,6 +59,7 @@
 \textbf{Status} & \\ Married \\ 2 children\\
 \textbf{Contact} & \\ \scriptsize{asanchezrodelgo@worldbank.org}\\
 \scriptsize {alberto.sanchez.rodelgo@gmail.com} \\
+\textbf{Github} & \\ \href{https://github.com/asRodelgo}{asRodelgo}\\
 \textbf{Work} & \\ World Bank Group\\
 \textbf{Location} & \\ Washington D.C.\\
 \end{tabular}
