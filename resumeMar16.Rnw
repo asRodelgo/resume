@@ -10,6 +10,7 @@
 \usepackage{wrapfig} % to wrap text around images
 \usepackage{multicol} % multiple columns layout
 \usepackage{xcolor} % color the background
+\usepackage{tikz} % crop images
 \usepackage{cutwin}
 \usepackage{booktabs} % proffesional touch to tables
 \usepackage[export]{adjustbox} % add alignment to includegraphics
@@ -39,14 +40,17 @@
 %%%%%%%%%%%%%%%% FIRST PAGE %%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \vspace{-1ex}
-\subsection*{\hspace{-0.7ex} Alberto Sanchez Rodelgo}
+\subsection*{\hspace{-0.7ex} Alberto Sanchez Rodelgo \hspace{18ex}\normalsize\href{https://github.com/asRodelgo}{https://github.com/asRodelgo}}
 \vspace{-2ex}
 \noindent\makebox[\linewidth]{\rule{19cm}{2pt}} % horiz line
 \begin{minipage}[c]{0.22\textwidth}
 \vspace{+2ex}
 \raggedleft\small \color{white!40!black}    Data Scientist \\  PMSO KM team\\ Macroeconomics, Trade and Investment, World Bank Group\\
 \vspace{+2ex}
-\includegraphics[width=0.95\textwidth]{/Users/asanchez3/Desktop/Testing/PresentationOfInformation/photoGSIMzoom.jpg}
+\begin{tikzpicture}
+  \clip(0,0.4)circle[x radius=1.5cm, y radius=1.5cm];
+  \node{\includegraphics[width=0.71\textwidth]{\Sexpr{paste0(getwd(),"/www/mugshot.jpg")}}};
+\end{tikzpicture}
 {\small
 \begin{tabular}{r p{3cm}}
 \multicolumn{2}{c}{} \\
@@ -55,6 +59,7 @@
 \textbf{Status} & \\ Married \\ 2 children\\
 \textbf{Contact} & \\ \scriptsize{asanchezrodelgo@worldbank.org}\\
 \scriptsize {alberto.sanchez.rodelgo@gmail.com} \\
+\textbf{Github} & \\ \href{https://github.com/asRodelgo}{asRodelgo}\\
 \textbf{Work} & \\ World Bank Group\\
 \textbf{Location} & \\ Washington D.C.\\
 \end{tabular}
@@ -71,13 +76,13 @@
 \begin{tabular}{r p{9cm}}
 \multicolumn{2}{c}{} \\
 %\midrule
-\textbf{Statistician} & I have always been fascinated by numbers, classifications, data. I ended up studying Maths and specialized in Statistics. Early in my career I worked for the National Statistics Institute of Spain (INE) then in 2012 for the Statistics Department at the IMF. Since November 2015 as a Data Scientist at the World Bank. I accumulate 15 years of experience working in Statistics.\\[3pt]
-\textbf{Innovative in data visualization} & I constantly search for innovative ways of presenting data. I have broad experience in Web content design, presentations, \href{https://tcdata360.worldbank.org/reports}{data reports}, infographics, D3 charts and newsletters.\\[3pt]
-\textbf{Data Scientist} & In my first job for a financial startup, I modeled intraday stocks market trading. At INE, I used SAS to optimize resource allocation for Data Collection Surveys. I was the analytics expert and R guru in the IMF's Statistics Department. In the Bank I build models, collaborate and present data driven by business questions. I deployed the first ever shiny-server and Connect to help the R research community in the Bank. For example: \href{https://blogs.worldbank.org/opendata/things-do-trade-and-competitiveness-data-thank-you-api}{TCdatascoper} \\[3pt]
-& I keep abreast of the developments in Data Science and Machine Learning and I participate in machine learning competitions and sports analytics conferences (MIT Sloan). I have a vast experience with statistical standards (SDMX, GSBPM, GSIM), and contributed papers on the Generic Statistical Business Model (GSIM) \\[3pt]
-\textbf{Skilled programmer} & I am an expert in R but also have programmed in Java: \href{http://www.ine.es/geotempus/?L=1}{Geo Statistics}, C++, Python, Visual basic, SAS and SQL. I have broad experience with Microsoft Business Analysis tools.\\[3pt]
-\textbf{Database and Web designer} & Extensive experience with relational databases. My major accomplishment was leading the creation of INE's new Dissemination Database, along with its API and powerful Web Applications. Examples of my work: \href{http://www.ine.es/FichasWeb/Welcome.do?L=1}{Geo Statistics}, \href{http://www.ine.es/ss/Satellite?L=es_ES&c=INEmasNoticia_C&cid=1259943920296&idp=1254736092090&pagename=masINE\%2FmasLayout}{Web Magazine}. In the Bank, my main project has been \href{https://tcdata360.worldbank.org/}{TCdata360} \\[3pt]
-\textbf{Project Manager} & I managed a team of 12 staff at INE for 3 years and I am currently the data lead in my unit in the Bank. As a project manager I combine expertise, drive for results, and I keep my team highly motivated and well trained. My teams thrive under stretch assignments and tight budgets. As an example: \href{http://www.ine.es/en}{INE's Website}.\\
+\textbf{Data Scientist} & I have always been fascinated by numbers, classifications, data. I studied Maths and specialized in Statistics. Early in my career I worked for the National Statistics Institute of Spain (INE) then, in 2012 I joined the Statistics Department of the IMF. Since November 2015 I work as a Data Scientist at the World Bank. Overall about 15 years of experience working with data.\\[3pt]
+\textbf{Innovative in data visualization} & I constantly search for innovative ways of presenting data. I have broad experience in Web content design, presentations, \href{https://tcdata360.worldbank.org/reports}{data reports}, \href{https://alberto-sanchez-rodelgo.shinyapps.io/datascoper/}{charts}, newsletters and \href{https://blogs.worldbank.org/opendata/things-do-trade-and-competitiveness-data-thank-you-api}{blogs}.\\[3pt]
+\textbf{Data Analyst \& Algorithms} & In my first job for a financial startup, I modeled intraday stocks market trading. At INE, I used SAS to optimize resource allocation for Data Collection Surveys. I was the analytics and R expert at the IMF's Statistics Department. At the Bank I build models and present data driven business solutions. I keep abreast of the developments in Data Science and Machine Learning and I participate in machine learning competitions and \href{https://alberto-sanchez-rodelgo.shinyapps.io/GameOfTrades/}{sports analytics conferences (MIT Sloan)}.\\[3pt]
+\textbf{Data Infrastructures} & I deployed the first ever shiny-server and Connect to help the R research community in the Bank. As an example: \href{https://blogs.worldbank.org/opendata/things-do-trade-and-competitiveness-data-thank-you-api}{TCdatascoper}. I have vast experience with statistical standards (SDMX, GSBPM, GSIM), and contributed papers on the Generic Statistical Business Model (GSIM) \\[3pt]
+\textbf{Skilled R and Shiny programmer} & I mostly work in R but I also have coding experience in Java: \href{http://www.ine.es/geotempus/?L=1}{Geo Statistics}, C++, Python, Visual basic, SAS and SQL. I have broad experience with Microsoft Business Analysis tools.\\[3pt]
+\textbf{Database and Web designer} & Extensive experience with relational databases. My major accomplishment was leading the creation of INE's new Dissemination Database, along with its API and portfolio of Web Applications. Examples of my work: \href{http://www.ine.es/FichasWeb/Welcome.do?L=1}{Geo Statistics}, \href{http://www.ine.es/ss/Satellite?L=es_ES&c=INEmasNoticia_C&cid=1259943920296&idp=1254736092090&pagename=masINE\%2FmasLayout}{Web Magazine}. At the Bank I manage \href{https://tcdata360.worldbank.org/}{TCdata360} \\[3pt]
+\textbf{Mentor \& Problem Solver} & It's a great safisfaction to be able to help my colleagues. Either advising data science projects, solving R \& Shiny questions, suggesting good data visualization practices or explaining statistical models. I also have managerial experience: At INE I managed a team of 12 staff. Currently I am the data lead in my unit.\\
 \end{tabular}
 }
 \end{minipage}
@@ -97,7 +102,7 @@
 Member of the High Body of Statisticians of Spain \\[2pt]
 Lectured 3 years for the European Statistical Training Program \\[2pt]
 Trained in Hadoop (Pig, Hive, Impala), R, Java, XML, Web services, SAS, C++, LaTeX, SDMX\\[2pt]
-Co-wrote 2 papers for the IMF on the Generic Statistical Information Model (GSIM) \\ and a paper for the MIT sports analytics conference \\[8pt]
+Co-wrote 2 papers for the IMF on the Generic Statistical Information Model (GSIM) \\ and a paper for the MIT sports analytics conference plus other paper collaborations at the Bank\\[8pt]
 \textbf{Education}\\[4pt]
 University of Manchester (UMIST) (2001-2002) - Applied Maths (Masters level)\\[2pt]
 \hspace{4ex} Dynamical Systems, Neural Networks, Data Engineering, Financial Statistics\\[2pt]
@@ -154,19 +159,19 @@ When & & Position / Where & Achievements\\
 \begin{tabular}{l p{5.3cm} p{11.1cm}}
 \multicolumn{3}{c}{}\\
 \hline \\
-15 -– now & \textbf{Data Scientist} \newline \footnotesize{Knowledge Management Team \newline Reporting to Practice Manager \newline\newline
+15 -– now & \textbf{Data Scientist} \newline \footnotesize{Knowledge Management Team \newline Reporting to Director \newline\newline
 \includegraphics[width=4cm,height=0.8cm,left]{wb_logo.jpg}
 \color{cyan}\textbf{\scriptsize World Bank Group (WBG)} \newline \scriptsize Macroeconomics, Trade and Investment Practice}
 & I manage the \href{https://tcdata360.worldbank.org/}{Trade and Competitiveness Open Data Site (TCdata360)}, place to go for Trade and Investment economists, researchers, government officials, and journalists featuring curated datasets, visuals, stories, reports and data science.
 \newline \newline
-I develop shiny and dashboards to support data analysis, fully fleshed sites or just prototypes, which allows users to interact and download country data and operations reports along with country comparisons and data analysis.
+I develop shiny apps and dashboards to support data analysis, from fully fleshed sites to just prototypes, allowing users to interact and download country data and operations reports along with country comparisons and data analysis.
 \newline \newline
 Currently I manage several survey data analysis and data reporting platforms in R. I frequently lead and collaborate in many data science projects, some related to NLP. I also collaborate in country operations: recently helped the Ministry of Finance of Guatemala develop a data portal in Shiny \\[6pt]
 \hline \\
 12 -– 15 & \textbf{Information Management Officer} \newline \footnotesize{Data Warehouse Team \newline Reporting to Section Chief \newline
 \includegraphics[width=1.3cm,height=1.3cm,left]{IMFlogo.png}
 \color{white!20!blue}\textbf{\scriptsize International Monetary Fund (IMF)} \newline \scriptsize Statistics Department}
-& I managed the Data Warehouse, lead communication and data visualization projects and collaborated in research papers. Evangelist of Data Science and member of the IMF's Big Data competition committee. Organized the Big Data talk by UN Global Pulse director as part of the IMF's 2nd Statistical Forum.
+& I managed the Data Warehouse, led communication and data visualization projects and collaborated in research papers. Evangelist of Data Science and member of the IMF's Big Data competition committee. Organized the Big Data talk by UN Global Pulse director as part of the IMF's 2nd Statistical Forum.
 \newline \newline
 I used R for Web scraping, database information retrieval, etc. I also used R and LaTeX to create dissemination products, reports and newsletters.
 \newline \newline
